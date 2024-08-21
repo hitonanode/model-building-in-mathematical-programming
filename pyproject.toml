@@ -7,9 +7,32 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.12,<3.13"
+pydantic = "^2.8.2"
+mip = "^1.15.0"
 
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.1"
+ruff = "^0.6.1"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    # https://docs.astral.sh/ruff/rules/
+    "E", # error
+    "F", # Pyflakes
+    "B", # flake8-bugbear
+    "W", # warning
+    # isort
+    "I001", # unsorted-imports
+    # pyupgrade (UP)
+    "UP035", # deprecated-import
+]
