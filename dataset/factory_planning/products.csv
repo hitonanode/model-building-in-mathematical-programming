@@ -1,0 +1,8 @@
+name,profit,grinder,vertical_drill,horizontal_drill,borer,planer
+"PROD 1",10,0.5,0.1,0.02,0.05,0
+"PROD 2",6,0.7,0.2,0,0.03,0
+"PROD 3",8,0,0,0.8,0,0.01
+"PROD 4",4,0,0.3,0,0.07,0
+"PROD 5",11,0.3,0,0,0.1,0.05
+"PROD 6",9,0.2,0.6,0,0,0
+"PROD 7",3,0.5,0,0.6,0.08,0.05
